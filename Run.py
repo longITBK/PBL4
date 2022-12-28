@@ -8,7 +8,7 @@ class UI():
     def __init__(self):
         self.mainformUI = QMainWindow()
         self.mainformhandle = Main_Form_Handle(self.mainformUI)
-
+    
         # create a timer
         self.timer = QTimer()
         self.timer.timeout.connect(lambda : self.mainformhandle.Time_Changing())
@@ -69,6 +69,11 @@ class UI():
 
         # OK the time schdule
         self.mainformhandle.btn_OK.clicked.connect(lambda : self.mainformhandle.Set_Times_Night_Light())
+
+        #default low battery warning setting
+        self.mainformhandle.default_setting_warning()
+
+        self.mainformhandle.btn_activate_warning_low_battery.clicked.connect(lambda : self.mainformhandle.change_on_off_warning())
 
 if __name__ == "__main__":
     app = QApplication([])

@@ -366,7 +366,27 @@ class Ui_Form(object):
         self.textEdit_2.setObjectName("textEdit_2")
         self.btn_suspend = QtWidgets.QPushButton(self.Options)
         self.btn_suspend.setGeometry(QtCore.QRect(630, 10, 91, 31))
-        self.btn_suspend.setStyleSheet("background-color: rgb(192, 191, 188);")
+        self.btn_suspend.setStyleSheet("QPushButton {\n"
+"                    background-color: rgb(154, 153, 150);\n"
+"                    border: 2px solid grey;\n"
+"                        border-left: 2px solid rgb(119, 118, 123);\n"
+"                       border-right: 3px solid rgb(94, 92, 100);\n"
+"                    border-bottom: 3px solid rgb(94, 92, 100);\n"
+"                    border-radius: 10px;\n"
+"                    padding-top: 5px;\n"
+"                    color: rgb(248, 228, 92);\n"
+"                    }\n"
+"\n"
+"                QPushButton:hover{                    \n"
+"                       background-color: rgb(156, 144, 144);\n"
+"                    }\n"
+"\n"
+"                QPushButton:pressed{\n"
+"                    background-color: rgb(154, 153, 150);\n"
+"                    border-top: 3px solid rgb(94, 92, 100);\n"
+"                    padding-top: -5px;\n"
+"                    border-bottom: none;\n"
+"                    }")
         self.btn_suspend.setAutoDefault(False)
         self.btn_suspend.setDefault(False)
         self.btn_suspend.setFlat(False)
@@ -407,20 +427,12 @@ class Ui_Form(object):
         self.label_6.setObjectName("label_6")
         self.btn_activate_plugin = QtWidgets.QPushButton(self.Options)
         self.btn_activate_plugin.setGeometry(QtCore.QRect(650, 320, 41, 31))
-        self.btn_activate_plugin.setStyleSheet("border-width: 2px;\n"
-"    border-radius: 10px;\n"
-"    border-color: beige;\n"
-"    font: bold 14px;\n"
-"")
+        self.btn_activate_plugin.setStyleSheet("")
         self.btn_activate_plugin.setCheckable(True)
         self.btn_activate_plugin.setObjectName("btn_activate_plugin")
         self.btn_activate_battery = QtWidgets.QPushButton(self.Options)
         self.btn_activate_battery.setGeometry(QtCore.QRect(653, 210, 41, 31))
-        self.btn_activate_battery.setStyleSheet("border-width: 2px;\n"
-"    border-radius: 10px;\n"
-"    border-color: beige;\n"
-"    font: bold 14px;\n"
-"")
+        self.btn_activate_battery.setStyleSheet("")
         self.btn_activate_battery.setCheckable(True)
         self.btn_activate_battery.setObjectName("btn_activate_battery")
         self.txt_power_saving_option.raise_()
@@ -442,7 +454,8 @@ class Ui_Form(object):
         self.Modes.setObjectName("Modes")
         self.frame = QtWidgets.QFrame(self.Modes)
         self.frame.setGeometry(QtCore.QRect(30, 30, 681, 291))
-        self.frame.setStyleSheet("background-color: rgb(246, 245, 244);")
+        self.frame.setStyleSheet("background-color: rgb(246, 245, 244);\n"
+"")
         self.frame.setObjectName("frame")
         self.label_4 = QtWidgets.QLabel(self.frame)
         self.label_4.setGeometry(QtCore.QRect(20, 10, 121, 17))
@@ -451,32 +464,32 @@ class Ui_Form(object):
         self.label_7.setGeometry(QtCore.QRect(20, 30, 271, 17))
         self.label_7.setObjectName("label_7")
         self.line_3 = QtWidgets.QFrame(self.frame)
-        self.line_3.setGeometry(QtCore.QRect(17, 50, 601, 20))
+        self.line_3.setGeometry(QtCore.QRect(7, 50, 621, 20))
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.line_4 = QtWidgets.QFrame(self.frame)
-        self.line_4.setGeometry(QtCore.QRect(10, 60, 20, 211))
+        self.line_4.setGeometry(QtCore.QRect(10, 70, 20, 191))
         self.line_4.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_4.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_4.setObjectName("line_4")
         self.line_6 = QtWidgets.QFrame(self.frame)
-        self.line_6.setGeometry(QtCore.QRect(599, 60, 31, 211))
+        self.line_6.setGeometry(QtCore.QRect(610, 70, 20, 201))
         self.line_6.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_6.setObjectName("line_6")
         self.line_7 = QtWidgets.QFrame(self.frame)
-        self.line_7.setGeometry(QtCore.QRect(20, 120, 591, 20))
+        self.line_7.setGeometry(QtCore.QRect(10, 120, 621, 20))
         self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_7.setObjectName("line_7")
         self.line_8 = QtWidgets.QFrame(self.frame)
-        self.line_8.setGeometry(QtCore.QRect(20, 190, 591, 20))
+        self.line_8.setGeometry(QtCore.QRect(10, 190, 621, 20))
         self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_8.setObjectName("line_8")
         self.line_9 = QtWidgets.QFrame(self.frame)
-        self.line_9.setGeometry(QtCore.QRect(20, 260, 591, 20))
+        self.line_9.setGeometry(QtCore.QRect(10, 260, 621, 20))
         self.line_9.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_9.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_9.setObjectName("line_9")
@@ -499,7 +512,7 @@ class Ui_Form(object):
         self.label_9.setGeometry(QtCore.QRect(70, 100, 191, 17))
         self.label_9.setObjectName("label_9")
         self.label_10 = QtWidgets.QLabel(self.frame)
-        self.label_10.setGeometry(QtCore.QRect(70, 150, 111, 17))
+        self.label_10.setGeometry(QtCore.QRect(70, 150, 121, 17))
         self.label_10.setObjectName("label_10")
         self.label_11 = QtWidgets.QLabel(self.frame)
         self.label_11.setGeometry(QtCore.QRect(70, 170, 211, 17))
@@ -538,11 +551,7 @@ class Ui_Form(object):
         self.line_15.setObjectName("line_15")
         self.btn_activate_night_light = QtWidgets.QPushButton(self.frame_2)
         self.btn_activate_night_light.setGeometry(QtCore.QRect(520, 20, 41, 31))
-        self.btn_activate_night_light.setStyleSheet("border-width: 2px;\n"
-"    border-radius: 10px;\n"
-"    border-color: beige;\n"
-"    font: bold 14px;\n"
-"")
+        self.btn_activate_night_light.setStyleSheet("")
         self.btn_activate_night_light.setCheckable(True)
         self.btn_activate_night_light.setObjectName("btn_activate_night_light")
         self.label_15 = QtWidgets.QLabel(self.frame_2)
@@ -579,73 +588,116 @@ class Ui_Form(object):
         self.cbb_schedule.setObjectName("cbb_schedule")
         self.cbb_schedule.addItem("")
         self.cbb_schedule.addItem("")
-        self.label_17 = QtWidgets.QLabel(self.frame_2)
-        self.label_17.setGeometry(QtCore.QRect(20, 210, 51, 31))
+        self.frame_3 = QtWidgets.QFrame(self.frame_2)
+        self.frame_3.setGeometry(QtCore.QRect(0, 200, 571, 171))
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.label_17 = QtWidgets.QLabel(self.frame_3)
+        self.label_17.setGeometry(QtCore.QRect(10, 10, 51, 31))
         self.label_17.setObjectName("label_17")
-        self.Hour_From = QtWidgets.QSpinBox(self.frame_2)
-        self.Hour_From.setGeometry(QtCore.QRect(130, 240, 41, 41))
-        self.Hour_From.setMinimum(1)
-        self.Hour_From.setMaximum(12)
-        self.Hour_From.setObjectName("Hour_From")
-        self.label_18 = QtWidgets.QLabel(self.frame_2)
-        self.label_18.setGeometry(QtCore.QRect(80, 250, 41, 31))
-        self.label_18.setObjectName("label_18")
-        self.Minute_From = QtWidgets.QSpinBox(self.frame_2)
-        self.Minute_From.setGeometry(QtCore.QRect(200, 240, 41, 41))
-        self.Minute_From.setMinimum(0)
-        self.Minute_From.setMaximum(59)
-        self.Minute_From.setObjectName("Minute_From")
-        self.label_19 = QtWidgets.QLabel(self.frame_2)
-        self.label_19.setGeometry(QtCore.QRect(360, 250, 41, 31))
-        self.label_19.setObjectName("label_19")
-        self.Hour_To = QtWidgets.QSpinBox(self.frame_2)
-        self.Hour_To.setGeometry(QtCore.QRect(400, 240, 41, 41))
-        self.Hour_To.setMinimum(1)
-        self.Hour_To.setMaximum(12)
-        self.Hour_To.setObjectName("Hour_To")
-        self.Minute_To = QtWidgets.QSpinBox(self.frame_2)
-        self.Minute_To.setGeometry(QtCore.QRect(470, 240, 41, 41))
-        self.Minute_To.setMinimum(0)
-        self.Minute_To.setMaximum(59)
-        self.Minute_To.setObjectName("Minute_To")
-        self.btn_Time_Format_From = QtWidgets.QPushButton(self.frame_2)
-        self.btn_Time_Format_From.setGeometry(QtCore.QRect(150, 290, 71, 31))
-        self.btn_Time_Format_From.setStyleSheet("border-width: 2px;\n"
-"border-radius: 10px;\n"
-"border-color: beige;\n"
-"background-color: rgb(153, 193, 241)")
-        self.btn_Time_Format_From.setCheckable(True)
-        self.btn_Time_Format_From.setAutoDefault(False)
-        self.btn_Time_Format_From.setDefault(False)
-        self.btn_Time_Format_From.setFlat(False)
-        self.btn_Time_Format_From.setObjectName("btn_Time_Format_From")
-        self.btn_Time_Format_To = QtWidgets.QPushButton(self.frame_2)
-        self.btn_Time_Format_To.setGeometry(QtCore.QRect(420, 290, 71, 31))
-        self.btn_Time_Format_To.setStyleSheet("border-width: 2px;\n"
-"border-radius: 10px;\n"
-"border-color: beige;\n"
-"background-color: rgb(153, 193, 241)")
+        self.btn_Time_Format_To = QtWidgets.QPushButton(self.frame_3)
+        self.btn_Time_Format_To.setGeometry(QtCore.QRect(410, 90, 71, 31))
+        self.btn_Time_Format_To.setStyleSheet("")
         self.btn_Time_Format_To.setCheckable(True)
         self.btn_Time_Format_To.setAutoDefault(False)
         self.btn_Time_Format_To.setDefault(False)
         self.btn_Time_Format_To.setFlat(False)
         self.btn_Time_Format_To.setObjectName("btn_Time_Format_To")
-        self.label_20 = QtWidgets.QLabel(self.frame_2)
-        self.label_20.setGeometry(QtCore.QRect(180, 250, 16, 31))
-        self.label_20.setObjectName("label_20")
-        self.label_21 = QtWidgets.QLabel(self.frame_2)
-        self.label_21.setGeometry(QtCore.QRect(450, 250, 16, 31))
-        self.label_21.setObjectName("label_21")
-        self.btn_OK = QtWidgets.QPushButton(self.frame_2)
-        self.btn_OK.setGeometry(QtCore.QRect(290, 330, 51, 31))
-        self.btn_OK.setStyleSheet("border-width: 2px;\n"
-"border-color: beige;\n"
-"background-color: rgb(119, 118, 123)")
-        self.btn_OK.setCheckable(True)
+        self.btn_OK = QtWidgets.QPushButton(self.frame_3)
+        self.btn_OK.setGeometry(QtCore.QRect(280, 130, 51, 31))
+        self.btn_OK.setStyleSheet("QPushButton {\n"
+"                    background-color: rgb(154, 153, 150);\n"
+"                    border: 2px solid grey;\n"
+"                        border-left: 2px solid rgb(119, 118, 123);\n"
+"                       border-right: 3px solid rgb(94, 92, 100);\n"
+"                    border-bottom: 3px solid rgb(94, 92, 100);\n"
+"                    border-radius: 10px;\n"
+"                    padding-top: 5px;\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    }\n"
+"\n"
+"                QPushButton:hover{\n"
+"                    background-color: rgb(156, 144, 144);\n"
+"                    }\n"
+"\n"
+"                QPushButton:pressed{\n"
+"                    background-color: rgb(154, 153, 150);\n"
+"                    border-top: 3px solid rgb(94, 92, 100);\n"
+"                    padding-top: -5px;\n"
+"                    border-bottom: none;\n"
+"                    }")
+        self.btn_OK.setCheckable(False)
         self.btn_OK.setAutoDefault(False)
         self.btn_OK.setDefault(False)
         self.btn_OK.setFlat(False)
         self.btn_OK.setObjectName("btn_OK")
+        self.label_21 = QtWidgets.QLabel(self.frame_3)
+        self.label_21.setGeometry(QtCore.QRect(440, 50, 16, 31))
+        self.label_21.setObjectName("label_21")
+        self.Hour_To = QtWidgets.QSpinBox(self.frame_3)
+        self.Hour_To.setGeometry(QtCore.QRect(390, 40, 41, 41))
+        self.Hour_To.setMinimum(1)
+        self.Hour_To.setMaximum(12)
+        self.Hour_To.setObjectName("Hour_To")
+        self.btn_Time_Format_From = QtWidgets.QPushButton(self.frame_3)
+        self.btn_Time_Format_From.setGeometry(QtCore.QRect(140, 90, 71, 31))
+        self.btn_Time_Format_From.setStyleSheet("QPushButton {\n"
+"                    background-color: orange;\n"
+"                    border: 2px solid grey;\n"
+"                        border-left: 2px solid rgb(119, 118, 123);\n"
+"                       border-right: 3px solid rgb(94, 92, 100);\n"
+"                    border-bottom: 3px solid rgb(94, 92, 100);\n"
+"                    border-radius: 10px;\n"
+"                    padding-top: 5px;\n"
+"                    color: rgb(0, 0, 0);\n"
+"                    }\n"
+"\n"
+"QPushButton:hover{\n"
+"                    background-color: rgb(255, 163, 72);\n"
+"                    }\n"
+"\n"
+"                QPushButton:pressed{\n"
+"                    background-color: orange;\n"
+"                    border-top: 3px solid rgb(94, 92, 100);\n"
+"                    padding-top: -5px;\n"
+"                    border-bottom: none;\n"
+"                    }")
+        self.btn_Time_Format_From.setCheckable(True)
+        self.btn_Time_Format_From.setAutoDefault(False)
+        self.btn_Time_Format_From.setDefault(False)
+        self.btn_Time_Format_From.setFlat(False)
+        self.btn_Time_Format_From.setObjectName("btn_Time_Format_From")
+        self.label_18 = QtWidgets.QLabel(self.frame_3)
+        self.label_18.setGeometry(QtCore.QRect(70, 50, 41, 31))
+        self.label_18.setObjectName("label_18")
+        self.label_20 = QtWidgets.QLabel(self.frame_3)
+        self.label_20.setGeometry(QtCore.QRect(170, 50, 16, 31))
+        self.label_20.setObjectName("label_20")
+        self.Hour_From = QtWidgets.QSpinBox(self.frame_3)
+        self.Hour_From.setGeometry(QtCore.QRect(120, 40, 41, 41))
+        self.Hour_From.setMinimum(1)
+        self.Hour_From.setMaximum(12)
+        self.Hour_From.setObjectName("Hour_From")
+        self.label_19 = QtWidgets.QLabel(self.frame_3)
+        self.label_19.setGeometry(QtCore.QRect(360, 50, 21, 31))
+        self.label_19.setObjectName("label_19")
+        self.Minute_To = QtWidgets.QSpinBox(self.frame_3)
+        self.Minute_To.setGeometry(QtCore.QRect(460, 40, 41, 41))
+        self.Minute_To.setMinimum(0)
+        self.Minute_To.setMaximum(59)
+        self.Minute_To.setObjectName("Minute_To")
+        self.Minute_From = QtWidgets.QSpinBox(self.frame_3)
+        self.Minute_From.setGeometry(QtCore.QRect(190, 40, 41, 41))
+        self.Minute_From.setMinimum(0)
+        self.Minute_From.setMaximum(59)
+        self.Minute_From.setObjectName("Minute_From")
+        self.label_23 = QtWidgets.QLabel(self.frame_2)
+        self.label_23.setGeometry(QtCore.QRect(110, 10, 41, 41))
+        self.label_23.setText("")
+        self.label_23.setPixmap(QtGui.QPixmap(":/newPrefix/PBL_Image&Icon/night_light_icon.png"))
+        self.label_23.setScaledContents(True)
+        self.label_23.setObjectName("label_23")
         self.line_2 = QtWidgets.QFrame(self.Night_Light)
         self.line_2.setGeometry(QtCore.QRect(100, 20, 118, 3))
         self.line_2.setStyleSheet("border-radius: 10px")
@@ -653,6 +705,55 @@ class Ui_Form(object):
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.tabWidget.addTab(self.Night_Light, "")
+        self.Warning = QtWidgets.QWidget()
+        self.Warning.setObjectName("Warning")
+        self.frame_4 = QtWidgets.QFrame(self.Warning)
+        self.frame_4.setGeometry(QtCore.QRect(80, 30, 571, 171))
+        self.frame_4.setStyleSheet("background-color: rgb(246, 245, 244);")
+        self.frame_4.setObjectName("frame_4")
+        self.label_22 = QtWidgets.QLabel(self.frame_4)
+        self.label_22.setGeometry(QtCore.QRect(100, 10, 211, 31))
+        self.label_22.setObjectName("label_22")
+        self.line_16 = QtWidgets.QFrame(self.frame_4)
+        self.line_16.setGeometry(QtCore.QRect(0, 80, 571, 20))
+        self.line_16.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_16.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_16.setObjectName("line_16")
+        self.btn_activate_warning_low_battery = QtWidgets.QPushButton(self.frame_4)
+        self.btn_activate_warning_low_battery.setGeometry(QtCore.QRect(510, 30, 41, 31))
+        self.btn_activate_warning_low_battery.setStyleSheet("")
+        self.btn_activate_warning_low_battery.setCheckable(True)
+        self.btn_activate_warning_low_battery.setObjectName("btn_activate_warning_low_battery")
+        self.label_24 = QtWidgets.QLabel(self.frame_4)
+        self.label_24.setGeometry(QtCore.QRect(100, 120, 161, 31))
+        self.label_24.setObjectName("label_24")
+        self.Battery_level = QtWidgets.QSpinBox(self.frame_4)
+        self.Battery_level.setGeometry(QtCore.QRect(480, 110, 51, 41))
+        self.Battery_level.setMinimum(0)
+        self.Battery_level.setMaximum(100)
+        self.Battery_level.setObjectName("Battery_level")
+        self.label_25 = QtWidgets.QLabel(self.frame_4)
+        self.label_25.setGeometry(QtCore.QRect(540, 120, 21, 31))
+        self.label_25.setObjectName("label_25")
+        self.label_26 = QtWidgets.QLabel(self.frame_4)
+        self.label_26.setGeometry(QtCore.QRect(120, 40, 51, 31))
+        self.label_26.setObjectName("label_26")
+        self.label_27 = QtWidgets.QLabel(self.frame_4)
+        self.label_27.setGeometry(QtCore.QRect(10, 20, 61, 51))
+        self.label_27.setText("")
+        self.label_27.setPixmap(QtGui.QPixmap(":/newPrefix/PBL_Image&Icon/png-transparent-warning-sign-computer-icons-warning-icon-angle-triangle-warning-sign-thumbnail.png"))
+        self.label_27.setScaledContents(True)
+        self.label_27.setObjectName("label_27")
+        self.txt_state_warning = QtWidgets.QLabel(self.frame_4)
+        self.txt_state_warning.setGeometry(QtCore.QRect(180, 40, 261, 31))
+        self.txt_state_warning.setObjectName("txt_state_warning")
+        self.label_29 = QtWidgets.QLabel(self.frame_4)
+        self.label_29.setGeometry(QtCore.QRect(10, 110, 71, 41))
+        self.label_29.setText("")
+        self.label_29.setPixmap(QtGui.QPixmap(":/newPrefix/PBL_Image&Icon/yellow_battery.jpg"))
+        self.label_29.setScaledContents(True)
+        self.label_29.setObjectName("label_29")
+        self.tabWidget.addTab(self.Warning, "")
         self.label = QtWidgets.QLabel(Form)
         self.label.setEnabled(True)
         self.label.setGeometry(QtCore.QRect(0, 0, 761, 91))
@@ -715,7 +816,7 @@ class Ui_Form(object):
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
         self.retranslateUi(Form)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.cbb_battery_sleep.setCurrentIndex(0)
         self.cbb_plugged_sleep.setCurrentIndex(0)
         self.cbb_screen_blank.setCurrentIndex(0)
@@ -724,7 +825,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "PBL4"))
+        Form.setWindowTitle(_translate("Form", "Power Management"))
         self.state.setText(_translate("Form", "<html><head/><body><p align=\"right\"><span style=\" font-weight:600; color:#1a5fb4;\">STATE:</span></p></body></html>"))
         self.txt_state.setText(_translate("Form", "TextLabel"))
         self.time_left.setText(_translate("Form", "<html><head/><body><p align=\"right\"><span style=\" font-weight:600; color:#3d3846;\">TIME LEFT:</span></p></body></html>"))
@@ -801,11 +902,11 @@ class Ui_Form(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Options), _translate("Form", "Options"))
         self.label_4.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">Power Mode</span></p></body></html>"))
         self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:9pt;\">Affects system performance and power usage</span></p></body></html>"))
-        self.label_8.setText(_translate("Form", "<html><head/><body><p>Performance</p></body></html>"))
+        self.label_8.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#e01b24;\">Performance</span></p></body></html>"))
         self.label_9.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:8pt;\">High performance and power usage</span></p></body></html>"))
-        self.label_10.setText(_translate("Form", "<html><head/><body><p>Balanced Power</p></body></html>"))
+        self.label_10.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#77767b;\">Balanced</span></p></body></html>"))
         self.label_11.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:8pt;\">Standard performance and power usage</span></p></body></html>"))
-        self.label_12.setText(_translate("Form", "<html><head/><body><p>Power Saver</p></body></html>"))
+        self.label_12.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#26a269;\">Power Saver</span></p></body></html>"))
         self.label_13.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:8pt;\">Reduce performance and power usage</span></p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Modes), _translate("Form", "Modes"))
         self.label_14.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">Night Light</span></p></body></html>"))
@@ -816,14 +917,21 @@ class Ui_Form(object):
         self.cbb_schedule.setItemText(0, _translate("Form", "Manual Schedule"))
         self.cbb_schedule.setItemText(1, _translate("Form", "Sunset to Sunrise"))
         self.label_17.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt;\">Times</span></p></body></html>"))
-        self.label_18.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; color:#9a9996;\">From</span></p></body></html>"))
-        self.label_19.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; color:#9a9996;\">To</span></p></body></html>"))
-        self.btn_Time_Format_From.setText(_translate("Form", "AM"))
         self.btn_Time_Format_To.setText(_translate("Form", "AM"))
-        self.label_20.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">:</span></p></body></html>"))
-        self.label_21.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">:</span></p></body></html>"))
         self.btn_OK.setText(_translate("Form", "OK"))
+        self.label_21.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">:</span></p></body></html>"))
+        self.btn_Time_Format_From.setText(_translate("Form", "AM"))
+        self.label_18.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; color:#9a9996;\">From</span></p></body></html>"))
+        self.label_20.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">:</span></p></body></html>"))
+        self.label_19.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; color:#9a9996;\">To</span></p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Night_Light), _translate("Form", "Night Light"))
+        self.label_22.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">Low Battery Level Warning</span></p></body></html>"))
+        self.btn_activate_warning_low_battery.setText(_translate("Form", "ON"))
+        self.label_24.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt;\">Show battery alert at: </span></p></body></html>"))
+        self.label_25.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:12pt;\">%</span></p></body></html>"))
+        self.label_26.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; text-decoration: underline; color:#9a9996;\">State:</span></p></body></html>"))
+        self.txt_state_warning.setText(_translate("Form", "show"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.Warning), _translate("Form", "Warning"))
         self.label.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt; font-weight:600; color:#000000;\">POWER MANAGEMENT</span></p></body></html>"))
 import Forms.Icon_rc
 

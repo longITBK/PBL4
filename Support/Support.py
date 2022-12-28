@@ -1,14 +1,4 @@
-class Support():
-    def Show_Charging_Sign(self):
-        self.gif_charging.show()
-        self.icon_battery.hide()
-        self.icon_lightning.show()
-    
-    def Hide_Charging_Sign(self):
-        self.gif_charging.hide()
-        self.icon_battery.show()
-        self.icon_lightning.hide()
-
+class Support():   
     def Minute_To_Second(self, time):
         switcher={
             'Never': 0,

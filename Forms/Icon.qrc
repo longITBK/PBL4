@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>../PBL_Image&amp;Icon/yellow_battery.jpg</file>
+    <file>../PBL_Image&amp;Icon/night_light_icon.png</file>
+    <file>../PBL_Image&amp;Icon/warning.png</file>
+    <file>../PBL_Image&amp;Icon/png-transparent-warning-sign-computer-icons-warning-icon-angle-triangle-warning-sign-thumbnail.png</file>
     <file>../PBL_Image&amp;Icon/icons8-lightning-67.png</file>
     <file>../PBL_Image&amp;Icon/icons8-full-battery-32.png</file>
     <file>../PBL_Image&amp;Icon/brightness-settings.png</file>
